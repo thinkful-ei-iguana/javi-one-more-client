@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
+import Header from '../Header/Header.js'
 
-export class workoutPage extends Component {
+
+class WorkoutPage extends Component {
 
 
 
@@ -9,10 +11,12 @@ export class workoutPage extends Component {
     render() {
         return (
             <div>
-                <h1>hello</h1>
+                <Header />
+                {/*<Route path={'/'} />*/}
+                {/* <Workouts /> */}
             </div>
         )
     }
 }
 
-export default workoutPage
+export default WorkoutPage
