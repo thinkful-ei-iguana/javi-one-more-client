@@ -1,19 +1,21 @@
-import React, { Component } from 'react'
+import React from 'react'
+import WorkoutItem from '../WorkoutItem/WorkoutItem.js'
 
-class Workouts extends Component {
-static defaultProps = {
-    workouts: []
-}
+export default function Workouts(props){
 
-    
-    render() {
+    console.log(props)
         return (
             <div>
                 <h2>Your Workouts</h2>
-
+                {props.workouts.map(workout => 
+                    <WorkoutItem 
+                        key={workout.id}
+                        {...workout}
+                    />
+                    )}
+                    
             </div>
         )
     }
-}
 
-export default Workouts
+
