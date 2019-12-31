@@ -1,10 +1,31 @@
 import React, { Component } from 'react'
+import config from '../../config'
 
 export class AddWorkoutForm extends Component {
 
 handleSubmit = e => {
     e.preventDefault()
    
+    const {title,lbs,workout1,set1,set2,set3} = e.target
+    const newWorkout = {
+        title: title.value,
+        lbs: Number(lbs.value),
+        workout1: Number(workout1.value),
+        set1: Number(set1.value),
+        set2: Number(set2.value),
+        set3: Number(set3.value),
+    }
+    fetch(config.API_ENDPOINT, {
+        method: 'POST',
+        body: JSON.stringify(newWorkout),
+        headers: {
+            'content-type': 'application/json'
+        }
+    })
+    .then(data => {
+        console.log(data)
+        this.props.history.push('/workoutPage')
+    })
 
  
 
@@ -30,8 +51,8 @@ handleClickCancel = () => {
                             <input id="title" name="title"type="text" placeholder="back"></input>
                           </div>
                           <div>
-                            <label htmlFor="workout">workout:</label>
-                            <input id="workout" name="workout1"type="text" placeholder="back extensions"></input>
+                            <label htmlFor="workout1">workout:</label>
+                            <input id="workout1" name="workout1"type="text" placeholder="back extensions"></input>
                           </div>
                           <div>
                             <label htmlFor="lbs">lbs:</label>
@@ -42,12 +63,12 @@ handleClickCancel = () => {
                               <input id="set1" name="set1" type="number" placeholder="10reps"></input>
                           </div>
                           <div>
-                              <label htmlFor="set1">set2:</label>
-                              <input id="set1" name="set1" type="number" placeholder="10reps"></input>
+                              <label htmlFor="set2">set2:</label>
+                              <input id="set2" name="set2" type="number" placeholder="10reps"></input>
                           </div>
                           <div>
-                              <label htmlFor="set1">set3:</label>
-                              <input id="set1" name="set1" type="number" placeholder="10reps"></input>
+                              <label htmlFor="set3">set3:</label>
+                              <input id="set3" name="set3" type="number" placeholder="10reps"></input>
                           </div>
 
 
