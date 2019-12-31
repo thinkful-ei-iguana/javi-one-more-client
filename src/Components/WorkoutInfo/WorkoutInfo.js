@@ -44,8 +44,7 @@ class WorkoutInfo extends Component{
             lbs: this.state.lbs - 2.5
         })
     }
-    newSave = e => {
-        e.preventDefault()
+    newSave = () => {
 
         const { id } = this.props.match.params
         const { title, workout1, lbs, set1, set2, set3 } = this.state
@@ -112,7 +111,7 @@ class WorkoutInfo extends Component{
 
                 <button onClick={this.deIncrementWeight}>-lbs</button>
                 <button onClick={this.incrementWeight}>+lbs</button>
-                <button type="submit" onClick={this.newSave}>save</button>
+                <button onClick={this.newSave}>save</button>
             </div>
         )
     }
