@@ -33,6 +33,35 @@ class WorkoutInfo extends Component{
         
     }
 
+    incrementWeight = () => {
+        this.setState({
+            lbs: this.state.lbs + 2.5
+        })
+    }
+
+    deIncrementWeight = () => {
+        this.setState({
+            lbs: this.state.lbs - 2.5
+        })
+    }
+    newSave = e => {
+        e.preventDefault()
+
+        const { id } = this.props.match.params
+        const { title, workout1, lbs, set1, set2, set3 } = this.state
+          const newSave = {title, workout1, lbs, set1, set2, set3}
+          fetch(config.API_ENDPOINT + `/${id}`, {
+            method: 'PATCH',
+            body: JSON.stringify(newSave),
+            headers: {
+                'content-type': 'application/json',
+             }
+            })
+            .then(() => {
+                this.props.history.push('/workoutPage')
+            })
+    }
+
     
     componentDidMount() {
         const { id } = this.props.match.params
@@ -66,20 +95,24 @@ class WorkoutInfo extends Component{
       }
 
     render(){
-        
+        const { title, workout1, lbs, set1, set2, set3} = this.state
         return (
             <div>
                 <Header />
                 <li>
-                    <h3>{this.state.title}</h3>
-                    <p>{this.state.lbs}lbs</p>
-                    <p>{this.state.workout1}</p>
-                    <p>set1: {this.state.set1}/reps</p>
-                    <p>set2: {this.state.set2}/reps</p>
-                    <p>set3: {this.state.set3}/reps</p>
+                    <h3>{title}</h3>
+                    <p>{lbs}lbs</p>
+                    <p>{workout1}</p>
+                    <p>set1: {set1}/reps</p>
+                    <p>set2: {set2}/reps</p>
+                    <p>set3: {set3}/reps</p>
                 </li>
 
                 <button onClick={this.deleteWorkoutRequest}>Delete</button>
+
+                <button onClick={this.deIncrementWeight}>-lbs</button>
+                <button onClick={this.incrementWeight}>+lbs</button>
+                <button type="submit" onClick={this.newSave}>save</button>
             </div>
         )
     }
