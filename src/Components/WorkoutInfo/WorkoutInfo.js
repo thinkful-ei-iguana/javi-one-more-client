@@ -102,7 +102,11 @@ class WorkoutInfo extends Component{
                 increments: this.state.increments + 3
             })
         }
-        console.log(this.state.increments)
+        if(this.state.suggestion){
+            this.setState({
+                suggestion: false
+            })
+        }
     }
 
 
