@@ -15,6 +15,7 @@ class WorkoutInfo extends Component{
         set1: 0,
         set2: 0,
         set3: 0,
+        increments: 1,
     }
 
     deleteWorkoutRequest = () => {
@@ -44,6 +45,27 @@ class WorkoutInfo extends Component{
             lbs: this.state.lbs - 2.5
         })
     }
+
+    incrementReps = () => {
+        if(this.state.increments === 1){
+            this.setState({
+                set1: this.state.set1 + 1,
+                increments: this.state.increments + 1,
+            })
+        } else if(this.state.increments === 2){
+            this.setState({
+                set2: this.state.set2 + 1,
+                increments: this.state.increments + 1
+            })
+        } else if(this.state.increments === 3){
+            this.setState({
+                set3: this.state.set3 + 1,
+                increments: this.state.increments - 2
+            })
+        }
+    }
+
+
     newSave = () => {
 
         const { id } = this.props.match.params
@@ -100,7 +122,12 @@ class WorkoutInfo extends Component{
                 <Header />
                 <li>
                     <h3>{title}</h3>
+                    <div>
                     <p>{lbs}lbs</p>
+                        <button onClick={this.deIncrementWeight}>-lbs</button>
+                        <button onClick={this.incrementWeight}>+lbs</button>
+                </div>
+
                     <p>{workout1}</p>
                     <p>set1: {set1}/reps</p>
                     <p>set2: {set2}/reps</p>
@@ -109,9 +136,10 @@ class WorkoutInfo extends Component{
 
                 <button onClick={this.deleteWorkoutRequest}>Delete</button>
 
-                <button onClick={this.deIncrementWeight}>-lbs</button>
-                <button onClick={this.incrementWeight}>+lbs</button>
+                
                 <button onClick={this.newSave}>save</button>
+
+                <button onClick={this.incrementReps}>One More</button>
             </div>
         )
     }
