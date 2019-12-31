@@ -1,10 +1,25 @@
 import React, { Component } from 'react'
 
 export class AddWorkoutForm extends Component {
+
+handleSubmit = e => {
+    e.preventDefault()
+   
+
+ 
+
+}
+
+handleClickCancel = () => {
+    this.props.history.push('/workoutPage')
+}
+
+
+
     render() {
         return (
             <div>
-                <form>
+                <form onSubmit={this.handleSubmit}>
                     <fieldset>
                         <legend>Workout</legend>
 
@@ -13,6 +28,10 @@ export class AddWorkoutForm extends Component {
                           <div>
                             <label htmlFor="title">Title:</label>
                             <input id="title" name="title"type="text" placeholder="back"></input>
+                          </div>
+                          <div>
+                            <label htmlFor="workout">workout:</label>
+                            <input id="workout" name="workout1"type="text" placeholder="back extensions"></input>
                           </div>
                           <div>
                             <label htmlFor="lbs">lbs:</label>
@@ -35,7 +54,7 @@ export class AddWorkoutForm extends Component {
                         </div>
                         <div>
                         <button type="button" onClick={this.handleClickCancel}>Cancel</button>
-                        <button>Save</button>
+                        <button type="submit">Save</button>
                         </div>
 
                     </fieldset>
