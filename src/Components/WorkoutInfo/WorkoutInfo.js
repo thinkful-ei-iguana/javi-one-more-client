@@ -60,7 +60,13 @@ class WorkoutInfo extends Component{
         } else if(this.state.increments === 3){
             this.setState({
                 set3: this.state.set3 + 1,
-                increments: this.state.increments - 2
+                increments: this.state.increments + 1
+            })
+        }
+        if(this.state.increments === 4){
+            //have a suggestion to increment weight.
+            this.setState({
+                increments: this.state.increments - 3
             })
         }
     }
