@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import { Route, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import Header from '../Header/Header.js'
-import AddWorkoutForm from '../AddWorkoutForm/AddWorkoutForm.js'
-import Workouts from '../WorkoutList/WorkoutList.js'
-import WorkoutInfo from '../WorkoutInfo/WorkoutInfo.js'
+//import AddWorkoutForm from '../AddWorkoutForm/AddWorkoutForm.js'
+import WorkoutList from '../WorkoutList/WorkoutList.js'
+//import WorkoutInfo from '../WorkoutInfo/WorkoutInfo.js'
 import config from '../../config';
 
 
@@ -38,6 +38,10 @@ componentDidMount(){
     .catch(error => this.setState({error}))
 }
 
+renderWorkoutInfo(){
+    
+}
+
 
     render() {
         return (
@@ -45,9 +49,7 @@ componentDidMount(){
                 <Header />
                 <main>
                 <Link to="/AddWorkoutForm">Add Workout</Link>
-                <Route path={'/AddWorkoutForm'} component={AddWorkoutForm} />
-                <Workouts workouts={this.state.workouts}/>
-                <WorkoutInfo workoutInfo={this.state.workouts}/>
+                <WorkoutList workouts={this.state.workouts}/>
                 </main>
             </div>
         )
