@@ -5,6 +5,7 @@ import '../LandingPage/LandingPage.css'
 import LandingPage from '../LandingPage/LandingPage.js'
 import WorkoutPage from '../WorkoutPage/WorkoutPage.js'
 import AddWorkout from '../AddWorkout/AddWorkout.js'
+import EditWorkout from '../EditWorkout/EditWorkout.js'
 import WorkoutInfo from '../WorkoutInfo/WorkoutInfo.js'
 
 class App extends Component {
@@ -34,6 +35,11 @@ class App extends Component {
     <Route 
       path={'/workout/:id'}
       component={WorkoutInfo}
+    />
+
+    <Route 
+      path={'/edit/:id'}
+      component={EditWorkout}
     />
 
     </div>
