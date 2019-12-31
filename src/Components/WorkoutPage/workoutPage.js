@@ -50,7 +50,7 @@ renderWorkoutInfo(){
             <div>
                 <Header />
                 <main>
-                <Link to="/AddWorkoutForm">Add Workout</Link>
+                <Link to="/addWorkout">Add Workout</Link>
                 <WorkoutList workouts={this.state.workouts}/>
                 </main>
             </div>

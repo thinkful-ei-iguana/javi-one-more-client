@@ -4,6 +4,7 @@ import '../../Components/App/App.css'
 import '../LandingPage/LandingPage.css'
 import LandingPage from '../LandingPage/LandingPage.js'
 import WorkoutPage from '../WorkoutPage/WorkoutPage.js'
+import AddWorkout from '../AddWorkout/AddWorkout.js'
 import WorkoutInfo from '../WorkoutInfo/WorkoutInfo.js'
 
 class App extends Component {
@@ -23,6 +24,11 @@ class App extends Component {
     <Route 
       path={'/workoutPage'}
       component={WorkoutPage}
+    />
+
+    <Route
+      path={'/addWorkout'}
+      component={AddWorkout}
     />
 
     <Route 
