@@ -47,11 +47,11 @@ handleClickCancel = () => {
 
                           <div>
                             <label htmlFor="title">Title:</label>
-                            <input id="title" name="title"type="text" placeholder="back"></input>
+                            <input id="title" name="title"type="text" placeholder="back" required></input>
                           </div>
                           <div>
                             <label htmlFor="workout1">workout:</label>
-                            <input id="workout1" name="workout1"type="text" placeholder="back extensions"></input>
+                            <input id="workout1" name="workout1"type="text" placeholder="back extensions" required></input>
                           </div>
                           <div>
                             <label htmlFor="lbs">lbs:</label>
