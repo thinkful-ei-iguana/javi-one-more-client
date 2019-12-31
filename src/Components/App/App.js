@@ -26,8 +26,8 @@ class App extends Component {
     />
 
     <Route 
-    path={'/workout/:id'}
-    component={WorkoutInfo}
+      path={'/workout/:id'}
+      component={WorkoutInfo}
     />
 
     </div>

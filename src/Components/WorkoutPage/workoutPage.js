@@ -21,6 +21,8 @@ class WorkoutPage extends Component {
     //   console.log(this.state.workouts)
   }
 
+
+
 componentDidMount(){
     fetch(config.API_ENDPOINT, {
         method: 'GET',
