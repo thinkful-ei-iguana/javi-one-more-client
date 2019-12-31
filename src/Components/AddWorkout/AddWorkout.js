@@ -9,8 +9,8 @@ handleSubmit = e => {
     const {title,lbs,workout1,set1,set2,set3} = e.target
     const newWorkout = {
         title: title.value,
+        workout1: workout1.value,
         lbs: Number(lbs.value),
-        workout1: Number(workout1.value),
         set1: Number(set1.value),
         set2: Number(set2.value),
         set3: Number(set3.value),
