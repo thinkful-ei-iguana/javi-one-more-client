@@ -16,6 +16,7 @@ class WorkoutInfo extends Component{
         set2: 0,
         set3: 0,
         increments: 1,
+        suggestion: false
     }
 
     deleteWorkoutRequest = () => {
@@ -151,16 +152,15 @@ class WorkoutInfo extends Component{
     render(){
         const { title, workout1, lbs, set1, set2, set3} = this.state
         return (
+        <div>
+            <Header />
+            <li>
+                <h3>{title}</h3>
             <div>
-                <Header />
-                <li>
-                    <h3>{title}</h3>
-                    <div>
-                    <p>{lbs}lbs</p>
-                        <button onClick={this.deIncrementWeight}>-lbs</button>
-                        <button onClick={this.incrementWeight}>+lbs</button>
-                </div>
-
+                <p>{lbs}lbs</p>
+                    <button onClick={this.deIncrementWeight}>-lbs</button>
+                    <button onClick={this.incrementWeight}>+lbs</button>
+            </div>
                     <p>{workout1}</p>
                     <p>set1: {set1}/reps</p>
                     <p>set2: {set2}/reps</p>
@@ -170,12 +170,13 @@ class WorkoutInfo extends Component{
                 <button onClick={this.incrementReps}>One More</button>
                 <button onClick={this.deIncrementReps}>One Less</button>
             </div>
+                {this.state.suggestion ? <span className="weight-suggestion">increase your weight instead</span> : false}
+            <div>
+                    <button onClick={this.newSave}>save</button>
 
-                <button onClick={this.deleteWorkoutRequest}>Delete</button>
-
-                
-                <button onClick={this.newSave}>save</button>
+                    <button onClick={this.deleteWorkoutRequest}>Delete</button>
             </div>
+        </div>
         )
     }
 

@@ -11,3 +11,8 @@ li{
     margin: 0;
     padding: 0;
 }
+
+.weight-suggestion{
+    color: blue;
+    font-size: small;
+}
