@@ -46,12 +46,13 @@ renderWorkoutInfo(){
 
 
     render() {
+        
         return (
             <div>
                 <Header />
                 <main>
                 <Link to="/addWorkout">Add Workout</Link>
-                <WorkoutList workouts={this.state.workouts}/>
+                <WorkoutList history={this.props} workouts={this.state.workouts}/>
                 </main>
             </div>
         )

@@ -4,12 +4,12 @@ import WorkoutItem from '../WorkoutItem/WorkoutItem.js'
 
 export default function Workouts(props){
 
-    console.log(props)
+    
         return (
             <div>
                 <h2>Your Workouts</h2>
                 {props.workouts.map(workout => 
-                    <WorkoutItem 
+                    <WorkoutItem history={props.history}
                         key={workout.id}
                         {...workout}
                     />

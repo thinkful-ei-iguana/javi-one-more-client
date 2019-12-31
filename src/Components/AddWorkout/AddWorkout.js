@@ -23,7 +23,6 @@ handleSubmit = e => {
         }
     })
     .then(data => {
-        console.log(data)
         this.props.history.push('/workoutPage')
     })
 
