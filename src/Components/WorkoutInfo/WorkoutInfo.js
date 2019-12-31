@@ -67,7 +67,13 @@ class WorkoutInfo extends Component{
         if(this.state.increments === 4){
             //have a suggestion to increment weight.
             this.setState({
-                increments: this.state.increments - 3
+                increments: this.state.increments - 3,
+                suggestion: true
+            })
+        }
+        if(this.state.increments === 1){
+            this.setState({
+                suggestion: false,
             })
         }
         console.log(this.state.increments)
@@ -114,7 +120,9 @@ class WorkoutInfo extends Component{
             })
             .then(() => {
                 this.props.history.push('/workoutPage')
+                // this.setState.suggestion = false
             })
+        
     }
 
     
@@ -170,7 +178,7 @@ class WorkoutInfo extends Component{
                 <button onClick={this.incrementReps}>One More</button>
                 <button onClick={this.deIncrementReps}>One Less</button>
             </div>
-                {this.state.suggestion ? <span className="weight-suggestion">increase your weight instead</span> : false}
+                {this.state.suggestion ? <span className="weight-suggestion">you should increase your weight</span> : false}
             <div>
                     <button onClick={this.newSave}>save</button>
 
