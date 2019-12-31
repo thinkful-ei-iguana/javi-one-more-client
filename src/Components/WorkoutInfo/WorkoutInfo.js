@@ -69,6 +69,33 @@ class WorkoutInfo extends Component{
                 increments: this.state.increments - 3
             })
         }
+        console.log(this.state.increments)
+    }
+
+    deIncrementReps = () => {
+        if(this.state.increments === 4){
+            this.setState({
+                set3: this.state.set3 - 1,
+                increments: this.state.increments - 1,
+            })
+        } else if(this.state.increments === 3){
+            this.setState({
+                set2: this.state.set2 - 1,
+                increments: this.state.increments - 1
+            })
+        } else if(this.state.increments === 2){
+            this.setState({
+                set1: this.state.set1 - 1,
+                increments: this.state.increments - 1
+            })
+        }
+        if(this.state.increments === 1){
+            //have a suggestion to increment weight.
+            this.setState({
+                increments: this.state.increments + 3
+            })
+        }
+        console.log(this.state.increments)
     }
 
 
@@ -139,13 +166,15 @@ class WorkoutInfo extends Component{
                     <p>set2: {set2}/reps</p>
                     <p>set3: {set3}/reps</p>
                 </li>
+            <div>
+                <button onClick={this.incrementReps}>One More</button>
+                <button onClick={this.deIncrementReps}>One Less</button>
+            </div>
 
                 <button onClick={this.deleteWorkoutRequest}>Delete</button>
 
                 
                 <button onClick={this.newSave}>save</button>
-
-                <button onClick={this.incrementReps}>One More</button>
             </div>
         )
     }
