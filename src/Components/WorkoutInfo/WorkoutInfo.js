@@ -5,11 +5,12 @@ import config from '../../config';
 
 class WorkoutInfo extends Component{
 
-    state = {}
+    getWorkout = (workout) => {
+        console.log(workout)
+    }
 
     componentDidMount() {
         const { id } = this.props.match.params
-        console.log(id)
         fetch(config.API_ENDPOINT + `/${id}`, {
           method: 'GET',
           headers: {
@@ -23,7 +24,8 @@ class WorkoutInfo extends Component{
             return res.json()
           })
           .then(responseData => {
-            console.log(responseData)
+            // console.log(responseData)
+            this.getWorkout(responseData)
           })
           .catch(error => {
             console.error(error)
@@ -31,17 +33,12 @@ class WorkoutInfo extends Component{
       }
 
     render(){
-        console.log(this.props.match.params)
+        
         return (
             <div>
                 <Header />
                 <li>
-                    {/* <h2>{props.workoutInfo.title}</h2>
-                    <p>{props.workoutInfo.workout1}</p>
-                    <p>{props.workoutInfo.lbs}lbs</p>
-                    <p>set1:{props.workoutInfo.set1}/reps</p>
-                    <p>set2:{props.workoutInfo.set2}/reps</p>
-                    <p>set3:{props.workoutInfo.set2}/reps</p> */}
+                    {/* getWorkout */}
                 </li>
             </div>
         )
