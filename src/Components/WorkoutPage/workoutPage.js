@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import Header from '../Header/Header.js'
-//import AddWorkoutForm from '../AddWorkoutForm/AddWorkoutForm.js'
+import '../WorkoutPage/workoutPage.css'
 import WorkoutList from '../WorkoutList/WorkoutList.js'
-//import WorkoutInfo from '../WorkoutInfo/WorkoutInfo.js'
 import config from '../../config';
 
 
@@ -51,7 +50,7 @@ renderWorkoutInfo(){
             <div>
                 <Header />
                 <main>
-                <Link to="/addWorkout">Add Workout</Link>
+                <Link to="/addWorkout"><span className="add-workout">Add Workout</span></Link>
                 <WorkoutList history={this.props} workouts={this.state.workouts}/>
                 </main>
             </div>

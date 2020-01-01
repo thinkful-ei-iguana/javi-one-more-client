@@ -16,5 +16,17 @@ body{
 }
 
 Header a{
+    text-decoration: none;
+    padding: 5px;
     color: white;
+}
+
+.enter-app{
+    padding: 3px;
+    border: 1px solid grey;
+}
+
+
+@media (min-width: 320px){
+    
 }

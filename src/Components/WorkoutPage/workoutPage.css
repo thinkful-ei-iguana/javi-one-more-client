@@ -1,0 +1,80 @@
+a{
+    text-decoration: none;
+}
+
+
+
+.workout-title{
+    display: inline-block;
+    border: 1px solid grey;
+    padding: 10px;
+    margin-top: 5px;
+}
+@media (min-width: 320px){
+    .your-workouts-title{
+        font-size: 1rem;
+    }
+    
+    .add-workout{
+        font-size: 12px;
+    }
+
+    .workout-title{
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 320px){
+    .your-workouts-title{
+        font-size: 1rem;
+    }
+    
+    .add-workout{
+        font-size: 12px;
+    }
+
+    .workout-title{
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 375px){
+    .your-workouts-title{
+        font-size: 1.2rem;
+    }
+    
+    .add-workout{
+        font-size: 12px;
+    }
+
+    .workout-title{
+        font-size: 1.2rem;
+    }
+}
+@media (min-width: 425px){
+    .your-workouts-title{
+        font-size: 1.2rem;
+    }
+    
+    .add-workout{
+        font-size: 14px;
+    }
+
+    .workout-title{
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 768px){
+    .your-workouts-title{
+        font-size: 1.5rem;
+    }
+    
+    .add-workout{
+        font-size: 1rem;
+    }
+
+    .workout-title{
+        font-size: 1.5rem;
+    }
+}

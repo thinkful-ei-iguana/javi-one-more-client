@@ -4,9 +4,33 @@
 }
 
 body{
+    max-width: 1024px;
     box-sizing: border-box;
+    margin: 0 auto 0 auto;
 }
 
 main{
     margin-top: 50px;
 }
+
+.landing-page-para{
+    line-height: 1.4;
+    padding: 10px;
+    text-align: left;
+}
+
+@media (min-width: 320px){
+    h2{
+        font-size: 1.5rem;
+    }
+    .landing-page-para{
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 375px){
+    .landing-page-para{
+        font-size: 16px;
+    }
+}
+

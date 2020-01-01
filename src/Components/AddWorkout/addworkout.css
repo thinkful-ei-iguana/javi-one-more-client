@@ -1,0 +1,23 @@
+form{
+    height: 250px;
+}
+
+fieldset{
+    height: 100%;
+}
+
+.button-container{
+    margin-top: 10px;
+}
+
+button{
+    
+    padding: 3px;
+    border: 1px solid grey;
+    border-radius: 3px;
+}
+
+.form-input{
+    padding: 3px;
+    margin-bottom: 5px;
+}

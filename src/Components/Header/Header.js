@@ -7,9 +7,10 @@ class Header extends Component {
         return (
         <div className="header-container">
             <header className="App-header">
-                <Link to="/" >One More</Link>
+                <Link to="/" ><span>One More</span></Link>
+                
                 <Link to='/workoutPage'>
-                  Enter App
+                <span className="enter-app">Enter App</span>
                  </Link>
             </header>
         </div>
