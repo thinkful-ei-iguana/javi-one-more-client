@@ -1,7 +1,6 @@
 import React from 'react'
 import WorkoutItem from '../WorkoutItem/WorkoutItem.js'
 import '../WorkoutPage/workoutPage.css'
-//import WorkoutInfo from '../WorkoutInfo/WorkoutInfo.js'
 
 export default function WorkoutList(props){
 

@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import '../AddWorkout/addworkout.css'
 import config from '../../config'
 import Header from '../Header/Header.js'
+import Footer from '../Footer/Footer.js'
 
 export class AddWorkoutForm extends Component {
 
@@ -40,7 +41,7 @@ handleClickCancel = () => {
 
     render() {
         return (
-            <div>
+            <div className="addworkout-container">
                 <Header />
                 <form onSubmit={this.handleSubmit}>
                     <fieldset>
@@ -82,6 +83,7 @@ handleClickCancel = () => {
 
                     </fieldset>
                 </form>
+                <Footer />
             </div>
         )
     }

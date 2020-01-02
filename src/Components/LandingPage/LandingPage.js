@@ -7,7 +7,7 @@ import Footer from '../Footer/Footer.js'
 export default function LandingPage(){
     
         return (
-            <div>
+            <div className="landingpage-container">
     <header className="App-header">
         <Header />
       </header>

@@ -1,5 +1,9 @@
+.addworkout-container{
+    height: 75vh;
+}
+
 form{
-    height: 250px;
+    height: 100%;
 }
 
 fieldset{

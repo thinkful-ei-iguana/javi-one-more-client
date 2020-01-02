@@ -15,7 +15,7 @@ class WorkoutInfo extends Component{
         set1: 0,
         set2: 0,
         set3: 0,
-        increments: 1,
+        increments: 0,
         suggestion: false
     }
 
@@ -48,65 +48,37 @@ class WorkoutInfo extends Component{
     }
 
     incrementReps = () => {
-        if(this.state.increments === 1){
-            this.setState({
-                set1: this.state.set1 + 1,
-                increments: this.state.increments + 1,
-            })
-        } else if(this.state.increments === 2){
-            this.setState({
-                set2: this.state.set2 + 1,
-                increments: this.state.increments + 1
-            })
-        } else if(this.state.increments === 3){
-            this.setState({
-                set3: this.state.set3 + 1,
-                increments: this.state.increments + 1
-            })
-        }
-        if(this.state.increments === 4){
-            //have a suggestion to increment weight.
-            this.setState({
-                increments: this.state.increments - 3,
-                suggestion: true
-            })
-        }
-        if(this.state.increments === 1){
-            this.setState({
-                suggestion: false,
-            })
-        }
-        console.log(this.state.increments)
-    }
-
-    deIncrementReps = () => {
-        if(this.state.increments === 4){
-            this.setState({
-                set3: this.state.set3 - 1,
-                increments: this.state.increments - 1,
-            })
-        } else if(this.state.increments === 3){
-            this.setState({
-                set2: this.state.set2 - 1,
-                increments: this.state.increments - 1
-            })
-        } else if(this.state.increments === 2){
-            this.setState({
-                set1: this.state.set1 - 1,
-                increments: this.state.increments - 1
-            })
-        }
-        if(this.state.increments === 1){
-            //have a suggestion to increment weight.
-            this.setState({
-                increments: this.state.increments + 3
-            })
-        }
-        if(this.state.suggestion){
+        this.setState({
+            set1: this.state.set1 + 1,
+            set2: this.state.set2 + 1,
+            set3: this.state.set3 + 1,
+            increments: this.state.increments + 1
+        })
+        if(this.state.increments === 0){
             this.setState({
                 suggestion: false
             })
         }
+        if(this.state.increments === 1){
+            this.setState({
+                suggestion: true,
+                increments: this.state.increments - 1
+            })
+        }
+    }
+
+    deIncrementReps = () => {
+        this.setState({
+            set1: this.state.set1 - 1,
+            set2: this.state.set2 - 1,
+            set3: this.state.set3 - 1
+        })
+        if(this.state.suggestion){
+                this.setState({
+                    suggestion: false
+                })
+            }
+        
     }
 
 
@@ -182,7 +154,7 @@ class WorkoutInfo extends Component{
                 <button onClick={this.incrementReps}>One More</button>
                 <button onClick={this.deIncrementReps}>One Less</button>
             </div>
-                {this.state.suggestion ? <span className="weight-suggestion">you should increase your weight</span> : false}
+                {this.state.suggestion ? <span className="weight-suggestion">increase your weight and decrease reps next time</span> : false}
             <div>
                     <button onClick={this.newSave}>save</button>
 
