@@ -7,6 +7,7 @@ import Footer from '../Footer/Footer.js'
 export class AddWorkoutForm extends Component {
 
 handleSubmit = e => {
+    
     e.preventDefault()
    
     const {title,lbs,workout1,set1,set2,set3} = e.target
