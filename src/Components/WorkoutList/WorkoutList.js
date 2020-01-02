@@ -1,15 +1,18 @@
-import React from 'react'
+import React, { Component } from 'react'
 import WorkoutItem from '../WorkoutItem/WorkoutItem.js'
 import '../WorkoutPage/workoutPage.css'
 
-export default function WorkoutList(props){
+class WorkoutList extends Component{
+    static defaultProps = {
+        workouts: []
+    }
 
-    
+    render(){
         return (
             <div className="your-workouts-container">
                 <h2 className="your-workouts-title">Your Workouts</h2>
-                {props.workouts.map(workout => 
-                    <WorkoutItem history={props.history}
+                {this.props.workouts.map(workout => 
+                    <WorkoutItem history={this.props.history}
                         key={workout.id}
                         {...workout}
                     />
@@ -18,5 +21,6 @@ export default function WorkoutList(props){
             </div>
         )
     }
+}
 
-
+export default WorkoutList
