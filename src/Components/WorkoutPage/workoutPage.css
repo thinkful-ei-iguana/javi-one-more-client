@@ -1,7 +1,13 @@
 a{
     text-decoration: none;
 }
+
+.workoutPage-container{
+    height: 100vh;
+}
 #background-color{
+    overflow: auto;
+    height: 75%;
     margin: 5px;
     background: darkgray;
 }

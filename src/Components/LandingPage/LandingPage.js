@@ -1,6 +1,7 @@
 import React from 'react'
 //import { Link } from 'react-router-dom'
 import Header from '../Header/Header.js'
+import Footer from '../Footer/Footer.js'
 
 
 export default function LandingPage(){
@@ -27,6 +28,7 @@ export default function LandingPage(){
           You can delete your workout if you wish.
         </p>
       </main>
+      <Footer />
             </div>
         )
     }

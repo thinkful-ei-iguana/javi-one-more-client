@@ -4,6 +4,7 @@ import Header from '../Header/Header.js'
 import '../WorkoutPage/workoutPage.css'
 import WorkoutList from '../WorkoutList/WorkoutList.js'
 import config from '../../config';
+import Footer from '../Footer/Footer.js'
 
 
 class WorkoutPage extends Component {
@@ -47,12 +48,13 @@ renderWorkoutInfo(){
     render() {
         
         return (
-            <div>
+            <div className="workoutPage-container">
                 <Header />
                 <main id="background-color">
                 <Link to="/addWorkout"><span className="add-workout">Add Workout</span></Link>
                 <WorkoutList history={this.props} workouts={this.state.workouts}/>
                 </main>
+                <Footer />
             </div>
         )
     }
