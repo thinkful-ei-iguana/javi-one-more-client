@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GET /workouts renders the UI as expected 1`] = `
+<div>
+  <div>
+    <a
+      href="/workout/undefined"
+      onClick={[Function]}
+    >
+       
+      <h3
+        className="workout-title"
+      />
+    </a>
+    <a
+      href="/edit/undefined"
+      onClick={[Function]}
+    >
+      <span
+        className="edit-button"
+      >
+        Edit
+      </span>
+    </a>
+  </div>
+</div>
+`;
