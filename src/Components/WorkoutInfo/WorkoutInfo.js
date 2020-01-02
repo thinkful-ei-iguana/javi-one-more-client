@@ -96,7 +96,6 @@ class WorkoutInfo extends Component{
             })
             .then(() => {
                 this.props.history.push('/workoutPage')
-                // this.setState.suggestion = false
             })
         
     }

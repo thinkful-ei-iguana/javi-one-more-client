@@ -5,6 +5,10 @@ a{
 .workoutPage-container{
     height: 100vh;
 }
+
+.your-workouts-container{
+    margin-top: 5px;
+}
 #background-color{
     overflow: auto;
     height: 75%;
@@ -12,7 +16,12 @@ a{
     background: darkgray;
 }
 
-
+.add-workout{
+    margin-top: 3px;
+    color: white;
+    border-bottom: 1px solid white;
+    padding: 3px;
+}
 .workout-title{
     color: white;
     display: inline-block;

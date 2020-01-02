@@ -51,7 +51,7 @@ renderWorkoutInfo(){
             <div className="workoutPage-container">
                 <Header />
                 <main id="background-color">
-                <Link to="/addWorkout"><span className="add-workout">Add Workout</span></Link>
+                <Link to="/addWorkout"><span className="add-workout">+ Workout</span></Link>
                 <WorkoutList history={this.props} workouts={this.state.workouts}/>
                 </main>
                 <Footer />
