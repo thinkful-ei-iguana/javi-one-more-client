@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import '../AddWorkout/addworkout.css'
 import config from '../../config'
+import Header from '../Header/Header.js'
 
 export class AddWorkoutForm extends Component {
 
@@ -40,6 +41,7 @@ handleClickCancel = () => {
     render() {
         return (
             <div>
+                <Header />
                 <form onSubmit={this.handleSubmit}>
                     <fieldset>
                         <legend>Workout</legend>

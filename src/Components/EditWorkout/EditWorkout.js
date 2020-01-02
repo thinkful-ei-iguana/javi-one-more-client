@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import config from '../../config'
+import Header from '../Header/Header.js'
 
 export class EditWorkout extends Component {
 
@@ -99,7 +100,7 @@ export class EditWorkout extends Component {
         const { title, workout1, lbs, set1, set2, set3} = this.state
         return (
             <div>
-
+              <Header />
                 <form onSubmit={this.handleSubmit}>
                     <fieldset>
                         <legend>Edit Workout</legend>
