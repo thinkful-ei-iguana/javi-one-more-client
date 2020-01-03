@@ -1,8 +1,17 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types';
 import config from '../../config'
 import Header from '../Header/Header.js'
 
-export class EditWorkout extends Component {
+class EditWorkout extends Component {
+  static propTypes = {
+    match: PropTypes.shape({
+      params: PropTypes.object,
+    }),
+    history: PropTypes.shape({
+      push: PropTypes.func,
+    }).isRequired,
+  };
 
     state = {
         id: '',
@@ -29,7 +38,6 @@ export class EditWorkout extends Component {
             return res.json()
           })
           .then(data => {
-            // console.log(data)
             this.setState({
                 id: data.id,
                 title: data.title,
@@ -109,11 +117,11 @@ export class EditWorkout extends Component {
 
                           <div>
                             <label htmlFor="title">Title:</label>
-                            <input id="title" name="title"type="text" placeholder="back" value={title} onChange={this.handleChangeTitle}></input>
+                            <input  id="title" name="title"type="text" placeholder="back" value={title} onChange={this.handleChangeTitle}></input>
                           </div>
                           <div>
                             <label htmlFor="workout1">workout:</label>
-                            <input id="workout1" name="workout1"type="text" placeholder="back extensions" 
+                            <input  id="workout1" name="workout1"type="text" placeholder="back extensions" 
                             value={workout1}
                             onChange={this.handleChangeWorkout1}></input>
                           </div>
