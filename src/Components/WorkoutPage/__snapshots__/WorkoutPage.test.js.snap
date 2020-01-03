@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`add workout renders the UI as expected 1`] = `
+<div
+  className="workoutPage-container"
+>
+  <div
+    className="header-container"
+  >
+    <header
+      className="App-header"
+    >
+      <a
+        href="/"
+        onClick={[Function]}
+      >
+        <span>
+          One More
+        </span>
+      </a>
+      <a
+        href="/workoutPage"
+        onClick={[Function]}
+      >
+        <span
+          className="enter-app"
+        >
+          Enter App
+        </span>
+      </a>
+    </header>
+  </div>
+  <main
+    id="background-color"
+  >
+    <a
+      href="/addWorkout"
+      onClick={[Function]}
+    >
+      <span
+        className="add-workout"
+      >
+        + Workout
+      </span>
+    </a>
+    <div
+      className="your-workouts-container"
+    >
+      <h2
+        className="your-workouts-title"
+      >
+        Your Workouts
+      </h2>
+    </div>
+  </main>
+  <div>
+    <footer>
+      copyright 2019, one more
+    </footer>
+  </div>
+</div>
+`;
