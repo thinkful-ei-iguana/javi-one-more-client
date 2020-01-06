@@ -18,13 +18,18 @@ body{
     height: 100vh;
 }
 
+.workout-fields{
+    padding: 5px;
+}
+
 .workoutinfo-list-item{
-    height: 300px;
+    height: auto;
 }
 
 button{
     font-size: 1.2rem;
     margin-right: 5px;
+    margin-bottom: 3px;
 }
 
 li{

@@ -140,16 +140,16 @@ class WorkoutInfo extends Component{
             <Header />
             <div className="list-container">
             <li className="workoutinfo-list-item">
-                <h3>{title}</h3>
+                <h3 className="workout-fields">{title}</h3>
             <div>
-                <p>{lbs}lbs</p>
+                <p className="workout-fields">{lbs}lbs</p>
                     <button onClick={this.deIncrementWeight}>-lbs</button>
                     <button onClick={this.incrementWeight}>+lbs</button>
             </div>
-                    <p>{workout1}</p>
-                    <p>set1: {set1}/reps</p>
-                    <p>set2: {set2}/reps</p>
-                    <p>set3: {set3}/reps</p>
+                    <p className="workout-fields">{workout1}</p>
+                    <p className="workout-fields">set1: {set1}/reps</p>
+                    <p className="workout-fields">set2: {set2}/reps</p>
+                    <p className="workout-fields">set3: {set3}/reps</p>
 
                     <div className="button-containr">
             <div>
