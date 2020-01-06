@@ -1,14 +1,17 @@
 .addworkout-container{
-    height: 75vh;
+    height: 100vh;
 }
 
 form{
-    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-fieldset{
-    height: 100%;
+.addworkout-fieldset{
+    padding: 5px;
 }
+
 
 .button-container{
     margin-top: 10px;
@@ -20,7 +23,6 @@ button:hover{
 }
 
 button{
-    
     padding: 3px;
     border: 1px solid grey;
     border-radius: 3px;
@@ -29,4 +31,84 @@ button{
 .form-input{
     padding: 3px;
     margin-bottom: 5px;
+}
+
+
+@media (min-width: 320px){
+    .addworkout-fieldset{
+        font-size: 1.3rem;
+        width: 275px;
+        height: 300px;
+    }
+    form{
+        height: 79%;
+    }
+
+    .form-buttons{
+        font-size: 1.2rem;
+    }
+
+}
+
+@media (min-width: 375px){
+    .addworkout-fieldset{
+        font-size: 1.4rem;
+        width: 275px;
+        height: 300px;
+    }
+    form{
+        height: 79%;
+    }
+
+    .form-buttons{
+        font-size: 1.2rem;
+    }
+
+}
+
+@media (min-width: 425px){
+    .addworkout-fieldset{
+        font-size: 1.5rem;
+        width: 300px;
+        height: 325px;
+    }
+    form{
+        height: 79%;
+    }
+
+    .form-buttons{
+        font-size: 1.2rem;
+    }
+
+}
+
+@media (min-width: 600px){
+    .addworkout-fieldset{
+        font-size: 1.7rem;
+        width: 325px;
+        height: 375px;
+    }
+    form{
+        height: 79%;
+    }
+
+    .form-buttons{
+        font-size: 1.2rem;
+    }
+
+}
+@media (min-width: 768px){
+    .addworkout-fieldset{
+        font-size: 1.7rem;
+        width: 350px;
+        height: 400px;
+    }
+    form{
+        height: 79%;
+    }
+
+    .form-buttons{
+        font-size: 1.2rem;
+    }
+
 }

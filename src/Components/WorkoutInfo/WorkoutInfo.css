@@ -22,7 +22,13 @@ body{
     height: 300px;
 }
 
+button{
+    font-size: 1.2rem;
+    margin-right: 5px;
+}
+
 li{
+    font-size: 1.5rem;
     margin: 0;
     padding: 0;
 }
@@ -30,4 +36,32 @@ li{
 .weight-suggestion{
     color: blue;
     font-size: small;
+}
+
+@media (min-width: 320px){
+    li{
+        font-size: 1.5rem;
+    }
+
+    button{
+        font-size: 1.2rem;
+    }
+}
+@media (min-width: 375px){
+    li{
+        font-size: 1.6rem;
+    }
+
+    button{
+        font-size: 1.3rem;
+    }
+}
+@media (min-width: 425px){
+    li{
+        font-size: 1.7rem;
+    }
+
+    button{
+        font-size: 1.4rem;
+    }
 }
