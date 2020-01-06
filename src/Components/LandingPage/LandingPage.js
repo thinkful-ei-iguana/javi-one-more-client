@@ -22,7 +22,7 @@ export default function LandingPage(){
           View your workouts by clicking on the title or Edit them.
           Inside your workout you can add/subtract to your inital weight.
           While still in your workout you can add/subtract one more/less to your reps.
-          After you have added an extra rep to each set. You will be suggested to increase your weight.
+          After every two increments of reps. You will be suggested to increase your weight and decrease reps as well.
           You can then save and return back to your workout page.
           You can delete your workout if you wish.
         </p>
