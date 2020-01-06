@@ -1,7 +1,8 @@
 import React from 'react'
 import Header from '../Header/Header.js'
 import Footer from '../Footer/Footer.js'
-import img from '../../Images/one-more-mobile.jpg'
+import imgMobile from '../../Images/one-more-mobile.jpg'
+import imgTablet from '../../Images/one-more-tablet.jpg'
 
 
 export default function LandingPage(){
@@ -16,7 +17,7 @@ export default function LandingPage(){
         <p className="landing-page-para">
           So you're at the gym and you forget what weight you were throwing around for a specific workout. You may have also forgotten how many reps you've been doing or should do. Well, with the One More App, all you have to do is put your initial workout in and you're ready to go. While your slamming those weights around and taking those selfies. Your mind can be at easy. Implement the One More feature and it will increment your reps for your next workout and you are ready to go. 
         </p>
-        <img src={img} alt="mobile-view" />
+        <img src={imgMobile} alt="mobile-view" />
         <p className="landing-page-para">
           Click on "Enter App" and it'll direct you to your workout page.
           Click on "add workout" to add initial workout.
@@ -28,6 +29,8 @@ export default function LandingPage(){
           You can then save and return back to your workout page.
           You can delete your workout if you wish.
         </p>
+        <h3>Customize your workouts</h3>
+        <img src={imgTablet} alt="tablet-view"/>
         
       </main>
       <Footer />
