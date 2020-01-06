@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types';
 import config from '../../config'
+import '../EditWorkout/EditWorkout.css'
 import Header from '../Header/Header.js'
+import Footer from '../Footer/Footer.js'
 
 class EditWorkout extends Component {
   static propTypes = {
@@ -109,7 +111,7 @@ class EditWorkout extends Component {
         return (
             <div>
               <Header />
-                <form onSubmit={this.handleSubmit}>
+                <form className="edit-form"  onSubmit={this.handleSubmit}>
                     <fieldset>
                         <legend>Edit Workout</legend>
 
@@ -151,7 +153,7 @@ class EditWorkout extends Component {
 
                     </fieldset>
                 </form>
-                
+                <Footer />
             </div>
         )
     }

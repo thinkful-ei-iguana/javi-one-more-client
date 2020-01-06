@@ -10,13 +10,14 @@ body{
     margin: 0 auto 0 auto;
 }
 .landingpage-container{
-    height: 70vh;
+    height: 100vh;
 }
 
 main{
-    height: 100%;
-    margin-top: 50px;
-    overflow: auto;
+    height: 280px;
+    margin-top: 15px;
+    padding: 15px;
+    
 }
 
 .landing-page-para{

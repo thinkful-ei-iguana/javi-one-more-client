@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Header from '../Header/Header.js'
+import Footer from '../Footer/Footer.js'
 import '../WorkoutInfo/WorkoutInfo.css'
 import config from '../../config';
 
@@ -135,9 +136,9 @@ class WorkoutInfo extends Component{
     render(){
         const { title, workout1, lbs, set1, set2, set3} = this.state
         return (
-        <div>
+        <div className="workout-info-container">
             <Header />
-            <li>
+            <li className="workoutinfo-list-item">
                 <h3>{title}</h3>
             <div>
                 <p>{lbs}lbs</p>
@@ -148,7 +149,8 @@ class WorkoutInfo extends Component{
                     <p>set1: {set1}/reps</p>
                     <p>set2: {set2}/reps</p>
                     <p>set3: {set3}/reps</p>
-                </li>
+
+                    <div className="button-containr">
             <div>
                 <button onClick={this.incrementReps}>One More</button>
                 <button onClick={this.deIncrementReps}>One Less</button>
@@ -159,6 +161,11 @@ class WorkoutInfo extends Component{
 
                     <button onClick={this.deleteWorkoutRequest}>Delete</button>
             </div>
+            </div>
+                </li>
+            
+
+            <Footer />
         </div>
         )
     }

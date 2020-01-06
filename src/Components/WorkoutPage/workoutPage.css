@@ -7,11 +7,13 @@ a{
 }
 
 .your-workouts-container{
+    height: 90%;
+    overflow: auto;
     margin-top: 5px;
 }
 #background-color{
-    overflow: auto;
-    height: 75%;
+    /* overflow: auto;
+    height: 100%; */
     margin: 5px;
     background: darkgray;
 }
