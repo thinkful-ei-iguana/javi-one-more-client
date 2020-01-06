@@ -138,6 +138,7 @@ class WorkoutInfo extends Component{
         return (
         <div className="workout-info-container">
             <Header />
+            <div className="list-container">
             <li className="workoutinfo-list-item">
                 <h3>{title}</h3>
             <div>
@@ -163,7 +164,7 @@ class WorkoutInfo extends Component{
             </div>
             </div>
                 </li>
-            
+                </div>
 
             <Footer />
         </div>

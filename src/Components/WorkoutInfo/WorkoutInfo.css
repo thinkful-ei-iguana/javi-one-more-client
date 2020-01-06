@@ -7,8 +7,19 @@ body{
     box-sizing: border-box;
 }
 
+.list-container{
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.workout-info-container{
+    height: 100vh;
+}
+
 .workoutinfo-list-item{
-    height: 322px;
+    height: 300px;
 }
 
 li{
