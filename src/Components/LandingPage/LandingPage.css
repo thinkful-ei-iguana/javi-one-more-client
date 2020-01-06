@@ -15,9 +15,14 @@ body{
 
 main{
     height: 72%;
+    overflow: auto;
     margin-top: 15px;
     padding: 15px;
     
+}
+
+img{
+    width: 300px;
 }
 
 .landing-page-para{
