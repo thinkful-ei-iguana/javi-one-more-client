@@ -9,9 +9,7 @@ body{
     box-sizing: border-box;
     margin: 0 auto 0 auto;
 }
-.landingpage-container{
-    height: 100vh;
-}
+
 
 main{
     height: 72%;
@@ -59,7 +57,7 @@ img{
 }
 @media (min-width: 800px){
     .landing-page-para{
-        font-size: 18px;
+        font-size: 16px;
     }
     img{
         width: 400px;
