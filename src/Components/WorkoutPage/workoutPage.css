@@ -2,9 +2,6 @@ a{
     text-decoration: none;
 }
 
-.workoutPage-container{
-    height: 100vh;
-}
 
 .your-workouts-container{
     height: 90%;
@@ -22,7 +19,7 @@ a{
 #background-image::after{
     color: rgba(27, 19, 19, 0.721);
      width: 100%;
-     height: 100vh;
+     height: 100%;
      position: absolute;
      content: '';
      top: 0;
