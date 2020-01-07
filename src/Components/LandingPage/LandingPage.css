@@ -22,7 +22,7 @@ main{
 }
 
 img{
-    width: 300px;
+    width: 200px;
 }
 
 .landing-page-para{
@@ -36,13 +36,33 @@ img{
         font-size: 1.5rem;
     }
     .landing-page-para{
-        font-size: 14px;
+        font-size: 12px;
     }
+    
 }
 
 @media (min-width: 375px){
     .landing-page-para{
+        font-size: 14px;
+    }
+    img{
+        width: 225px;
+    }
+}
+@media (min-width: 500px){
+    .landing-page-para{
         font-size: 16px;
+    }
+    img{
+        width: 250px;
+    }
+}
+@media (min-width: 800px){
+    .landing-page-para{
+        font-size: 18px;
+    }
+    img{
+        width: 400px;
     }
 }
 

@@ -22,7 +22,7 @@ export default function LandingPage(){
           Click on "Enter App" and it'll direct you to your workout page.
           Click on "add workout" to add initial workout.
           Add your initial workout and save.
-          View your workouts by clicking on the title or Edit them.
+          View your workouts by clicking on the title.
           Inside your workout you can add/subtract to your inital weight.
           While still in your workout you can add/subtract one more/less to your reps.
           After every two increments of reps. You will be suggested to increase your weight and decrease reps as well.

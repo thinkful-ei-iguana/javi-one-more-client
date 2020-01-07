@@ -10,7 +10,7 @@ a{
     height: 90%;
     margin-top: 5px;
 }
-#background-color{
+#background-image{
     margin: 5px;
     background: url("../../Images/main-fitness-pic.jpg");
     background-repeat: no-repeat;
@@ -19,13 +19,35 @@ a{
     position: relative;
 }
 
+#background-image::after{
+    color: rgba(27, 19, 19, 0.721);
+     width: 100%;
+     height: 100vh;
+     position: absolute;
+     content: '';
+     top: 0;
+     left:0;
+     background: rgba(81, 153, 225, 0.3);
+    z-index: 1;
+}
+
 .add-workout{
     margin-top: 3px;
     color: white;
     border-bottom: 1px solid white;
     padding: 3px;
+    position: relative;
+    z-index: 2;
 }
+.your-workouts-title{
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
 .workout-title{
+    position: relative;
+    z-index: 2;
     color: white;
     display: inline-block;
     border-bottom: 1px solid grey;
@@ -35,18 +57,22 @@ a{
 }
 
 .workout-title:hover{
-    color: black;
+    color: lightblue;
 }
 
 .edit-button{
-    color: black;
+    position: relative;
+    z-index: 2;
+    color: white;
     padding: 3px;
     border-bottom: 1px solid black;
     border-radius: 50%;
+    border-color: white;
 }
 
 .edit-button:hover{
-    color: white;
+    color: lightblue;
+    border-color: lightblue;
 }
 @media (min-width: 320px){
     .your-workouts-title{
