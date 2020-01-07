@@ -8,14 +8,15 @@ a{
 
 .your-workouts-container{
     height: 90%;
-    overflow: auto;
     margin-top: 5px;
 }
 #background-color{
-    /* overflow: auto;
-    height: 100%; */
     margin: 5px;
-    background: darkgray;
+    background: url("../../Images/main-fitness-pic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
 
 .add-workout{
