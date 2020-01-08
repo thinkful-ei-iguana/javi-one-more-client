@@ -1,0 +1,9 @@
+{
+    "version": 2,
+    "alias": "one-more",
+    "name": "one-more-app",
+    "routes": [
+      { "handle": "filesystem" },
+      { "src": "/.*", "dest": "/index.html" }
+  ]
+}
