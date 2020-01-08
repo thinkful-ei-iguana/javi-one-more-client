@@ -1,3 +1,3 @@
 export default {
-    API_ENDPOINT: `https://one-more.now.sh/`,
+    API_ENDPOINT: `https://immense-brushlands-91832.herokuapp.com/`,
   }
