@@ -33,8 +33,10 @@ export default function LandingPage(){
         <img src={imgTablet} alt="tablet-view"/>
         
       </main>
-      <div><Footer /></div>
-            </div>
+      <div>
+        <Footer />
+      </div>
+          </div>
         )
     }
 
