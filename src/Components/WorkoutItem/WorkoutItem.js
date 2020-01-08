@@ -7,10 +7,6 @@ import { Link } from 'react-router-dom'
 
 export default function WorkoutItem(props){
 
-    
-
-    
-    
         return (
             <div>
                 <div>

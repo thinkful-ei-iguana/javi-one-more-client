@@ -18,7 +18,6 @@ class WorkoutPage extends Component {
           workouts,
           error: null,
       })
-    //   console.log(this.state.workouts)
   }
 
 
@@ -40,13 +39,8 @@ componentDidMount(){
     .catch(error => this.setState({error}))
 }
 
-renderWorkoutInfo(){
-    
-}
-
 
     render() {
-        
         return (
             <div className="workoutPage-container">
                 <Header />

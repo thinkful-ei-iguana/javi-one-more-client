@@ -22,7 +22,6 @@ class WorkoutInfo extends Component{
 
     deleteWorkoutRequest = () => {
         const { id } = this.props.match.params
-        console.log(id)
         fetch(config.API_ENDPOINT + `/${id}`, {
             method: 'DELETE',
             headers: {
@@ -30,7 +29,6 @@ class WorkoutInfo extends Component{
             }
         })
         .then(() => {
-            
            this.props.history.push('/workoutPage')
         })
         
@@ -98,7 +96,6 @@ class WorkoutInfo extends Component{
             .then(() => {
                 this.props.history.push('/workoutPage')
             })
-        
     }
 
     
@@ -117,7 +114,6 @@ class WorkoutInfo extends Component{
             return res.json()
           })
           .then(data => {
-            // console.log(data)
             this.setState({
                 id: data.id,
                 title: data.title,

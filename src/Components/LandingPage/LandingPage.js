@@ -8,10 +8,10 @@ import imgTablet from '../../Images/one-more-tablet.jpg'
 export default function LandingPage(){
     
         return (
-            <div className="landingpage-container">
-    <header className="App-header">
-        <Header />
-      </header>
+        <div className="landingpage-container">
+            <header className="App-header">
+              <Header />
+            </header>
       <main>
         <h2>About the App</h2>
         <p className="landing-page-para">
