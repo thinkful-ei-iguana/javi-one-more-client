@@ -18,9 +18,13 @@ After every two increments of reps. You will suggested to increase your weight.
 You can then save and return back to your workout page.
 You can delete your workout if you wish.
 
+![](/src/Images/landing-page.png)
+
 ![](/src/Images/one-more.png)
 
 ![](/src/Images/add-workout.png)
+
+![](/src/Images/edit-form.png)
 
 ![](/src/Images/workout-log.png)
 
