@@ -4,10 +4,12 @@ a{
 
 
 .your-workouts-container{
-    height: 90%;
+    height: 400px;
+    overflow: auto;
     margin-top: 5px;
 }
 #background-image{
+
     margin: 5px;
     background: url("../../Images/main-fitness-pic.jpg");
     background-repeat: no-repeat;
