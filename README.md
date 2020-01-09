@@ -1,14 +1,18 @@
-Name of app: One More
+### Name of app: 
+#### One More
 
+### Live link to app
 [Live Url](https://zeit.co/zapien120/one-more-app/csbn3j1sb)
 
-//Documentation of your API[?]
-//Screenshots of your app.
+### Documentation of API
+[API Documentation](https://github.com/thinkful-ei-iguana/javi-one-more-server)
 
-Technology used: React,CSS Node, Express and PostgreSQL
+### Technology used: 
+React,CSS Node, Express and PostgreSQL
 
 
-Summary: So you're at the gym and you forget what weight you were throwing around for a specific workout. You may have also forgotten how many reps you've been doing or should do. Well, with the One More App, all you have to do is put your initial workout in and you're ready to go. While your slamming those weights around and taking those selfies. Your mind can be at easy. Implement the One More feature and it will increment your reps for your next workout and you are ready to go. 
+### Summary: 
+So you're at the gym and you forget what weight you were throwing around for a specific workout. You may have also forgotten how many reps you've been doing or should do. Well, with the One More App, all you have to do is put your initial workout in and you're ready to go. While your slamming those weights around and taking those selfies. Your mind can be at easy. Implement the One More feature and it will increment your reps for your next workout and you are ready to go. 
      
 Click on "Enter App" and it'll direct you to your workout page.
 Click on "add workout" to add initial workout.
@@ -20,6 +24,8 @@ After every two increments of reps. You will suggested to increase your weight.
 You can then save and return back to your workout page.
 You can delete your workout if you wish.
 
+
+### Screen shots of app
 ![](/src/Images/landing-page.png)
 
 ![](/src/Images/one-more.png)
