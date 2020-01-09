@@ -1,6 +1,6 @@
 Name of app: One More
 
-[Live Url](one-more.now.sh)
+[Live Url](https://zeit.co/zapien120/one-more-app/csbn3j1sb)
 
 //Documentation of your API[?]
 //Screenshots of your app.
