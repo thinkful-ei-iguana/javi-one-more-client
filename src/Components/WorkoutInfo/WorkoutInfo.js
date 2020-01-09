@@ -162,7 +162,7 @@ class WorkoutInfo extends Component{
                 </li>
                 </div>
 
-            <Footer />
+            
         </div>
         )
     }

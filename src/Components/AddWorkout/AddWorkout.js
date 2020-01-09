@@ -85,7 +85,7 @@ handleClickCancel = () => {
 
                     </fieldset>
                 </form>
-                <Footer />
+                
             </div>
         )
     }

@@ -153,7 +153,7 @@ class EditWorkout extends Component {
 
                     </fieldset>
                 </form>
-                <Footer />
+                
             </div>
         )
     }
