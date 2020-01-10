@@ -5,6 +5,7 @@
 [Live Url](https://zeit.co/zapien120/one-more-app/csbn3j1sb)
 
 ### Documentation of API
+[Server API Documentation](https://github.com/thinkful-ei-iguana/javi-one-more-server)
 
 Client Documentation:
 
@@ -18,7 +19,6 @@ Client Documentation:
 
 /src/components/workoutlist/workoutlist.js => renders each new workout
 
-[Server API Documentation](https://github.com/thinkful-ei-iguana/javi-one-more-server)
 
 ### Technology used: 
 React,CSS Node, Express and PostgreSQL
