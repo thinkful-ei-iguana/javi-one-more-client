@@ -4,7 +4,7 @@ a{
 
 
 .your-workouts-container{
-    height: 400px;
+    height: 600px;
     overflow: auto;
     margin-top: 5px;
     z-index: 2;
