@@ -2,10 +2,23 @@
 #### One More
 
 ### Live link to app
-[Live Url](https://zeit.co/zapien120/one-more-app/csbn3j1sb)
+[Live Url](https://one-more-app.zapien120.now.sh/)
 
 ### Documentation of API
-[API Documentation](https://github.com/thinkful-ei-iguana/javi-one-more-server)
+[Server API Documentation](https://github.com/thinkful-ei-iguana/javi-one-more-server)
+
+Client Documentation:
+
+/src/components/app/app.js => contains all routes/paths to domain endpoints
+
+/src/components/addworkout/addworkout.js => contains the form to addwokrout
+
+/src/components/editworkout/editworkout.js => contains the form to edit workout
+
+/src/components/workoutinfo/workoutinfo.js => gets your workout information and also allows you to edit and update
+
+/src/components/workoutlist/workoutlist.js => renders each new workout
+
 
 ### Technology used: 
 React,CSS Node, Express and PostgreSQL
@@ -23,6 +36,7 @@ While still in your workout you can add/subtract one more/leto your reps.
 After every two increments of reps. You will suggested to increase your weight.
 You can then save and return back to your workout page.
 You can delete your workout if you wish.
+Clicking on the app title "One More" returns you to the landing page
 
 
 ### Screen shots of app
