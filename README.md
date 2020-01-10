@@ -36,6 +36,7 @@ While still in your workout you can add/subtract one more/leto your reps.
 After every two increments of reps. You will suggested to increase your weight.
 You can then save and return back to your workout page.
 You can delete your workout if you wish.
+Clicking on the app title "One More" returns you to the landing page
 
 
 ### Screen shots of app
