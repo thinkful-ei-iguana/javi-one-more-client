@@ -5,7 +5,20 @@
 [Live Url](https://zeit.co/zapien120/one-more-app/csbn3j1sb)
 
 ### Documentation of API
-[API Documentation](https://github.com/thinkful-ei-iguana/javi-one-more-server)
+
+Client Documentation:
+
+/src/components/app/app.js => contains all routes/paths to domain endpoints
+
+/src/components/addworkout/addworkout.js => contains the form to addwokrout
+
+/src/components/editworkout/editworkout.js => contains the form to edit workout
+
+/src/components/workoutinfo/workoutinfo.js => gets your workout information and also allows you to edit and update
+
+/src/components/workoutlist/workoutlist.js => renders each new workout
+
+[Server API Documentation](https://github.com/thinkful-ei-iguana/javi-one-more-server)
 
 ### Technology used: 
 React,CSS Node, Express and PostgreSQL
