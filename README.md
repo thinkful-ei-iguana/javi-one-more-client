@@ -2,7 +2,7 @@
 #### One More
 
 ### Live link to app
-[Live Url](https://zeit.co/zapien120/one-more-app/csbn3j1sb)
+[Live Url](https://one-more-app.zapien120.now.sh/)
 
 ### Documentation of API
 [Server API Documentation](https://github.com/thinkful-ei-iguana/javi-one-more-server)
