@@ -43,7 +43,7 @@ componentDidMount(){
     render() {
         return (
             <div className="workoutPage-container">
-                <Header />
+                <Header history={this.props}/>
                 <main id="background-image">
                 <Link to="/addWorkout"><span className="add-workout">+ Workout</span></Link>
                 <WorkoutList history={this.props} workouts={this.state.workouts}/>

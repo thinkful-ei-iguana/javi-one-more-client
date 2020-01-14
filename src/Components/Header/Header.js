@@ -2,9 +2,10 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeartbeat } from '@fortawesome/free-solid-svg-icons'
-import SignUp from '../SignUp/SignUp'
+import LoginPage from '../LoginPage/LoginPage'
 
 import '../Header/Header.css'
+import LoginForm from '../LoginForm/LoginForm'
 
 
 class Header extends Component {
@@ -18,7 +19,7 @@ class Header extends Component {
                 <span className="enter-app">Enter App</span>
                  </Link>
                  <div>
-                     <SignUp />
+                     <LoginPage history={this.props} />
                  </div>
             </header>
         </div>
