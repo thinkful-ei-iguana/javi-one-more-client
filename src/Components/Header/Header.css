@@ -9,7 +9,7 @@ body{
 
 .header-container{
     width: 100%;
-    height: 75px;
+    height: 100px;
 }
 .header-container{
     height: auto;
@@ -23,7 +23,6 @@ Header a{
 
 .enter-app{
     padding: 3px;
-    border: 1px solid grey;
 }
 
 

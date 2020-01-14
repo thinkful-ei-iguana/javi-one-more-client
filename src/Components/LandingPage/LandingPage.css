@@ -9,14 +9,18 @@ body{
     box-sizing: border-box;
     margin: 0 auto 0 auto;
 }
-.landingpage-container{
-    height: 70vh;
-}
+
 
 main{
-    height: 100%;
-    margin-top: 50px;
+    height: 72%;
     overflow: auto;
+    margin-top: 15px;
+    padding: 15px;
+    
+}
+
+img{
+    width: 200px;
 }
 
 .landing-page-para{
@@ -30,13 +34,33 @@ main{
         font-size: 1.5rem;
     }
     .landing-page-para{
-        font-size: 14px;
+        font-size: 12px;
     }
+    
 }
 
 @media (min-width: 375px){
     .landing-page-para{
+        font-size: 14px;
+    }
+    img{
+        width: 225px;
+    }
+}
+@media (min-width: 500px){
+    .landing-page-para{
         font-size: 16px;
+    }
+    img{
+        width: 250px;
+    }
+}
+@media (min-width: 800px){
+    .landing-page-para{
+        font-size: 16px;
+    }
+    img{
+        width: 400px;
     }
 }
 

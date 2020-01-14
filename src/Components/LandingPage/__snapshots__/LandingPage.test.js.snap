@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`add workout renders the UI as expected 1`] = `
+<div
+  className="landingpage-container"
+>
+  <header
+    className="App-header"
+  >
+    <div
+      className="header-container"
+    >
+      <header
+        className="App-header"
+      >
+        <a
+          href="/"
+          onClick={[Function]}
+        >
+          <span>
+            One More
+          </span>
+        </a>
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-heartbeat fa-w-16 "
+          data-icon="heartbeat"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M320.2 243.8l-49.7 99.4c-6 12.1-23.4 11.7-28.9-.6l-56.9-126.3-30 71.7H60.6l182.5 186.5c7.1 7.3 18.6 7.3 25.7 0L451.4 288H342.3l-22.1-44.2zM473.7 73.9l-2.4-2.5c-51.5-52.6-135.8-52.6-187.4 0L256 100l-27.9-28.5c-51.5-52.7-135.9-52.7-187.4 0l-2.4 2.4C-10.4 123.7-12.5 203 31 256h102.4l35.9-86.2c5.4-12.9 23.6-13.2 29.4-.4l58.2 129.3 49-97.9c5.9-11.8 22.7-11.8 28.6 0l27.6 55.2H481c43.5-53 41.4-132.3-7.3-182.1z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+        <a
+          href="/workoutPage"
+          onClick={[Function]}
+        >
+          <span
+            className="enter-app"
+          >
+            Enter App
+          </span>
+        </a>
+      </header>
+    </div>
+  </header>
+  <main>
+    <h2>
+      About the App
+    </h2>
+    <p
+      className="landing-page-para"
+    >
+      So you're at the gym and you forget what weight you were throwing around for a specific workout. You may have also forgotten how many reps you've been doing or should do. Well, with the One More App, all you have to do is put your initial workout in and you're ready to go. While your slamming those weights around and taking those selfies. Your mind can be at easy. Implement the One More feature and it will increment your reps for your next workout and you are ready to go.
+    </p>
+    <img
+      alt="mobile-view"
+      src="one-more-mobile.jpg"
+    />
+    <p
+      className="landing-page-para"
+    >
+      Click on "Enter App" and it'll direct you to your workout page. Click on "add workout" to add initial workout. Add your initial workout and save. View your workouts by clicking on the title. Inside your workout you can add/subtract to your inital weight. While still in your workout you can add/subtract one more/less to your reps. After every two increments of reps. You will be suggested to increase your weight and decrease reps as well. You can then save and return back to your workout page. You can delete your workout if you wish.
+    </p>
+    <h3>
+      Customize your workouts
+    </h3>
+    <img
+      alt="tablet-view"
+      src="one-more-tablet.jpg"
+    />
+  </main>
+  <div>
+    <div>
+      <footer>
+        copyright 2019, one more
+      </footer>
+    </div>
+  </div>
+</div>
+`;

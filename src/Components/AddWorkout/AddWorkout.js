@@ -7,6 +7,7 @@ import Footer from '../Footer/Footer.js'
 export class AddWorkoutForm extends Component {
 
 handleSubmit = e => {
+    
     e.preventDefault()
    
     const {title,lbs,workout1,set1,set2,set3} = e.target
@@ -44,10 +45,10 @@ handleClickCancel = () => {
             <div className="addworkout-container">
                 <Header />
                 <form onSubmit={this.handleSubmit}>
-                    <fieldset>
+                    <fieldset className="addworkout-fieldset">
                         <legend>Workout</legend>
 
-                        <div>
+                        <div className="form-content">
 
                           <div className="form-input">
                             <label htmlFor="title">Title:</label>
@@ -74,16 +75,17 @@ handleClickCancel = () => {
                               <input id="set3" name="set3" type="number" placeholder="10reps"></input>
                           </div>
 
+                          <div className="button-container">
+                        <button className="form-buttons" type="button" onClick={this.handleClickCancel}>Cancel</button>
+                        <button className="form-buttons" type="submit">Save</button>
+                        </div>
 
                         </div>
-                        <div className="button-container">
-                        <button type="button" onClick={this.handleClickCancel}>Cancel</button>
-                        <button type="submit">Save</button>
-                        </div>
+                       
 
                     </fieldset>
                 </form>
-                <Footer />
+                
             </div>
         )
     }

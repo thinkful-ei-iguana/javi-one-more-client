@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GET /workouts renders the UI as expected 1`] = `
+<div
+  className="your-workouts-container"
+>
+  <h2
+    className="your-workouts-title"
+  >
+    Your Workouts
+  </h2>
+</div>
+`;

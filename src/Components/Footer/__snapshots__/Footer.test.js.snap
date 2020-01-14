@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`add workout renders the UI as expected 1`] = `
+<div>
+  <footer>
+    copyright 2019, one more
+  </footer>
+</div>
+`;

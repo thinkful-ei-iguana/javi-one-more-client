@@ -1,11 +1,16 @@
-form{
+.edit-form{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.addworkout-fieldset{
+.edit-fieldset{
     padding: 5px;
+}
+
+.edit-fields{
+    padding: 5px;
+    margin-bottom: 3px;
 }
 
 
@@ -31,12 +36,12 @@ button{
 
 
 @media (min-width: 320px){
-    .addworkout-fieldset{
+    .edit-fieldset{
         font-size: 1.3rem;
         width: 275px;
         height: 300px;
     }
-    form{
+    .edit-form{
         height: 79%;
     }
 
@@ -47,12 +52,12 @@ button{
 }
 
 @media (min-width: 375px){
-    .addworkout-fieldset{
+    .edit-fieldset{
         font-size: 1.4rem;
         width: 275px;
         height: 300px;
     }
-    form{
+    .edit-form{
         height: 79%;
     }
 
@@ -63,12 +68,12 @@ button{
 }
 
 @media (min-width: 425px){
-    .addworkout-fieldset{
+    .edit-fieldset{
         font-size: 1.5rem;
         width: 300px;
         height: 325px;
     }
-    form{
+    .edit-form{
         height: 79%;
     }
 
@@ -79,12 +84,12 @@ button{
 }
 
 @media (min-width: 600px){
-    .addworkout-fieldset{
+    .edit-fieldset{
         font-size: 1.7rem;
         width: 325px;
         height: 375px;
     }
-    form{
+    .edit-form{
         height: 79%;
     }
 
@@ -94,12 +99,12 @@ button{
 
 }
 @media (min-width: 768px){
-    .addworkout-fieldset{
+    .edit-fieldset{
         font-size: 1.7rem;
         width: 350px;
         height: 400px;
     }
-    form{
+    .edit-form{
         height: 79%;
     }
 

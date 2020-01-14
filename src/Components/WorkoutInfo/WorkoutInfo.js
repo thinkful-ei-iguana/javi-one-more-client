@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Header from '../Header/Header.js'
+import Footer from '../Footer/Footer.js'
 import '../WorkoutInfo/WorkoutInfo.css'
 import config from '../../config';
 
@@ -21,7 +22,6 @@ class WorkoutInfo extends Component{
 
     deleteWorkoutRequest = () => {
         const { id } = this.props.match.params
-        console.log(id)
         fetch(config.API_ENDPOINT + `/${id}`, {
             method: 'DELETE',
             headers: {
@@ -29,7 +29,6 @@ class WorkoutInfo extends Component{
             }
         })
         .then(() => {
-            
            this.props.history.push('/workoutPage')
         })
         
@@ -97,7 +96,6 @@ class WorkoutInfo extends Component{
             .then(() => {
                 this.props.history.push('/workoutPage')
             })
-        
     }
 
     
@@ -116,7 +114,6 @@ class WorkoutInfo extends Component{
             return res.json()
           })
           .then(data => {
-            // console.log(data)
             this.setState({
                 id: data.id,
                 title: data.title,
@@ -135,20 +132,22 @@ class WorkoutInfo extends Component{
     render(){
         const { title, workout1, lbs, set1, set2, set3} = this.state
         return (
-        <div>
+        <div className="workout-info-container">
             <Header />
-            <li>
-                <h3>{title}</h3>
+            <div className="list-container">
+            <li className="workoutinfo-list-item">
+                <h3 className="workout-fields">{title}</h3>
             <div>
-                <p>{lbs}lbs</p>
+                <p className="workout-fields">{lbs}lbs</p>
                     <button onClick={this.deIncrementWeight}>-lbs</button>
                     <button onClick={this.incrementWeight}>+lbs</button>
             </div>
-                    <p>{workout1}</p>
-                    <p>set1: {set1}/reps</p>
-                    <p>set2: {set2}/reps</p>
-                    <p>set3: {set3}/reps</p>
-                </li>
+                    <p className="workout-fields">{workout1}</p>
+                    <p className="workout-fields">set1: {set1}/reps</p>
+                    <p className="workout-fields">set2: {set2}/reps</p>
+                    <p className="workout-fields">set3: {set3}/reps</p>
+
+                    <div className="button-containr">
             <div>
                 <button onClick={this.incrementReps}>One More</button>
                 <button onClick={this.deIncrementReps}>One Less</button>
@@ -159,6 +158,11 @@ class WorkoutInfo extends Component{
 
                     <button onClick={this.deleteWorkoutRequest}>Delete</button>
             </div>
+            </div>
+                </li>
+                </div>
+
+            
         </div>
         )
     }

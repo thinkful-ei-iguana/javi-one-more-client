@@ -18,7 +18,6 @@ class WorkoutPage extends Component {
           workouts,
           error: null,
       })
-    //   console.log(this.state.workouts)
   }
 
 
@@ -40,17 +39,12 @@ componentDidMount(){
     .catch(error => this.setState({error}))
 }
 
-renderWorkoutInfo(){
-    
-}
-
 
     render() {
-        
         return (
             <div className="workoutPage-container">
                 <Header />
-                <main id="background-color">
+                <main id="background-image">
                 <Link to="/addWorkout"><span className="add-workout">+ Workout</span></Link>
                 <WorkoutList history={this.props} workouts={this.state.workouts}/>
                 </main>
