@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import { Route } from 'react-router-dom'
 import '../../Components/App/App.css'
 import '../LandingPage/LandingPage.css'
+
 import LandingPage from '../LandingPage/LandingPage.js'
+import LoginPage from '../LoginPage/LoginPage.js'
 import WorkoutPage from '../WorkoutPage/WorkoutPage.js'
 import AddWorkout from '../AddWorkout/AddWorkout.js'
 import EditWorkout from '../EditWorkout/EditWorkout.js'
@@ -25,6 +27,11 @@ class App extends Component {
     <Route 
       path={'/workoutPage'}
       component={WorkoutPage}
+    />
+
+    <Route 
+      path={'/login'}
+      component={LoginPage}
     />
 
     <Route

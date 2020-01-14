@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeartbeat } from '@fortawesome/free-solid-svg-icons'
+import SignUp from '../SignUp/SignUp'
 
 import '../Header/Header.css'
 
@@ -16,6 +17,9 @@ class Header extends Component {
                 <Link to='/workoutPage'>
                 <span className="enter-app">Enter App</span>
                  </Link>
+                 <div>
+                     <SignUp />
+                 </div>
             </header>
         </div>
         )
