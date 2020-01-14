@@ -5,7 +5,6 @@ import { faHeartbeat } from '@fortawesome/free-solid-svg-icons'
 import LoginPage from '../LoginPage/LoginPage'
 
 import '../Header/Header.css'
-import LoginForm from '../LoginForm/LoginForm'
 
 
 class Header extends Component {
@@ -19,7 +18,7 @@ class Header extends Component {
                 <span className="enter-app">Enter App</span>
                  </Link>
                  <div>
-                     <LoginPage history={this.props} />
+                <Link to='/login'>LOGIN</Link>
                  </div>
             </header>
         </div>
