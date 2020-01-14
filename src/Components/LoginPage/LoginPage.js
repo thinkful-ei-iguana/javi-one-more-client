@@ -10,12 +10,7 @@ class LoginPage extends Component {
         }
     }
 
-    handleLoginSuccess = () => {
-        console.log(this.props)
-        const { history } = this.props
-        // const destination = (location.state || {}).from || '/'
-        history.push('/')
-    }
+    
 
 
 
@@ -24,7 +19,7 @@ class LoginPage extends Component {
         return (
             <div>
                 <LoginForm 
-                    onLoginSuccess={this.handleLoginSuccess}
+                    history={this.props}
                 />
             </div>
         )
