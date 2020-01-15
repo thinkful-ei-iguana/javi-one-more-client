@@ -47,10 +47,6 @@ handleSubmitJwtAuth = e => {
     }
 
 
-
-}
-
-
     render() {
         return (
             <div>
