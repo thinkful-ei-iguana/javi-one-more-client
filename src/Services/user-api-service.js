@@ -3,7 +3,7 @@ import config from "../config"
 const UserApiService = {
 
     getUsers(userID) {
-        return fetch(`${config.API_ENDPOINT}/workouts/${userID}/myWorkouts`, {
+        return fetch(`${config.API_ENDPOINT}/${userID}/myWorkouts`, {
           headers: {
             'content-type': 'application/json'
           }
