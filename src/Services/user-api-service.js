@@ -15,4 +15,4 @@ const UserApiService = {
 
 }
 
-module.exports = UserApiService
+export default UserApiService
