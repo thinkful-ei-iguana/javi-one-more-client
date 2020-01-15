@@ -9,7 +9,7 @@ import WorkoutPage from '../WorkoutPage/WorkoutPage.js'
 import AddWorkout from '../AddWorkout/AddWorkout.js'
 import EditWorkout from '../EditWorkout/EditWorkout.js'
 import WorkoutInfo from '../WorkoutInfo/WorkoutInfo.js'
-import UserWorkoutPage from '../UsersWorkoutPage/UserWorkoutPage.js'
+import UserWorkoutPage from '../UserWorkoutPage/UserWorkoutPage.js'
 
 class App extends Component {
 
