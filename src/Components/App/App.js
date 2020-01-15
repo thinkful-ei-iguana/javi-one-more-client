@@ -9,6 +9,7 @@ import WorkoutPage from '../WorkoutPage/WorkoutPage.js'
 import AddWorkout from '../AddWorkout/AddWorkout.js'
 import EditWorkout from '../EditWorkout/EditWorkout.js'
 import WorkoutInfo from '../WorkoutInfo/WorkoutInfo.js'
+import MemberWorkoutPage from '../UsersWorkoutPage/MemberWorkoutPage.js.js'
 
 class App extends Component {
 
@@ -41,7 +42,7 @@ class App extends Component {
 
     <Route 
       path={'/:user_id/myWorkouts'}
-      component={WorkoutPage}
+      component={MemberWorkoutPage}
     />
 
     <Route 
