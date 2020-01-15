@@ -13,7 +13,7 @@ class UserWorkoutPage extends Component {
     
       componentDidMount() {
         const { user_Id } = this.props.match.params;
-        UserApiService.getusers(user_Id)
+        UserApiService.getUsers(user_Id)
           .then(res => console.log("user workouts",res))
           
       }
