@@ -21,7 +21,7 @@ class LoginPage extends Component {
         return (
             <div>
                 <LoginForm 
-                    history={this.props}
+                    history={this.handleLoginSuccess}
                 />
             </div>
         )
