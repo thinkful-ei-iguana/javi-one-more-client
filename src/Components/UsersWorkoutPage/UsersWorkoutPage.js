@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import UserApiService from '../../Services/user-api-service'
 
-export class MemberWorkoutPage extends Component {
+class UserWorkoutPage extends Component {
     static defaultProps = {
         match: { params: {} }
       };
@@ -35,4 +35,4 @@ export class MemberWorkoutPage extends Component {
     }
 }
 
-export default MemberWorkoutPage
+export default UserWorkoutPage
