@@ -40,6 +40,11 @@ class App extends Component {
     />
 
     <Route 
+      path={'/:user_id/myWorkouts'}
+      component={WorkoutPage}
+    />
+
+    <Route 
       path={'/workout/:id'}
       component={WorkoutInfo}
     />
