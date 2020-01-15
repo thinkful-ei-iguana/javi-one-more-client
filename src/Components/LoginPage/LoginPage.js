@@ -15,7 +15,6 @@ class LoginPage extends Component {
 
 
     render() {
-        console.log(this.props,'render')
         return (
             <div>
                 <LoginForm 

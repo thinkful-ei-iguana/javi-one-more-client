@@ -25,6 +25,7 @@ handleSubmitJwtAuth = e => {
         user_name.value = ''
         password.value = ''
         TokenService.saveAuthToken(res.authToken)
+        console.log(this.props.history)
         this.props.history.push('/workoutPage')
     })
 
