@@ -12,7 +12,7 @@ class LoginPage extends Component {
     handleLoginSuccess = () => {
         console.log('success')
         const { history } = this.props
-        history.push('/workoutPage')
+        history.push('/:user_id/myWorkouts')
     }
 
 
