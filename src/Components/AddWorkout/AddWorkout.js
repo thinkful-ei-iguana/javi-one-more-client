@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import '../AddWorkout/addworkout.css'
 import config from '../../config'
 import Header from '../Header/Header.js'
-import Footer from '../Footer/Footer.js'
 
 export class AddWorkoutForm extends Component {
 

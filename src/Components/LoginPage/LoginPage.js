@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
 import LoginForm from '../LoginForm/LoginForm.js'
 
 class LoginPage extends Component {
@@ -10,7 +9,11 @@ class LoginPage extends Component {
         }
     }
 
-    
+    handleLoginSuccess = () => {
+        console.log('success')
+        const { history } = this.props
+        history.push('/workoutPage')
+    }
 
 
 
