@@ -29,22 +29,7 @@ handleSubmitJwtAuth = e => {
         this.props.onLoginSuccess()
     })
 
-    
-        fetch(config.API_ENDPOINT, {
-            method: 'GET',
-            headers: {
-                'content-type': 'application/json'
-            }
-        })
-        .then(res => {
-            if(!res.ok){
-                throw new Error(res.status)
-            }
-            return console.log(res.json())
-        })
-        .then(this.setWorkouts)
-        .catch(error => this.setState({error}))
-    }
+}
 
 
     render() {
