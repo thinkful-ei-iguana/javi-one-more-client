@@ -26,7 +26,7 @@ handleSubmitJwtAuth = e => {
         password.value = ''
         TokenService.saveAuthToken(res.authToken)
         console.log(this.props)
-        this.props.handleLoginSuccess()
+        this.props.onLoginSuccess()
     })
 
 }
