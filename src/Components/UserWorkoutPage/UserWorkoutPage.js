@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import UserApiService from '../../Services/user-api-service'
+// import UserApiService from '../../Services/user-api-service'
 
 class UserWorkoutPage extends Component {
     static defaultProps = {
@@ -11,13 +11,13 @@ class UserWorkoutPage extends Component {
       }
       
     
-      componentDidMount() {
-        const { user_Id } = this.props.match.params;
-        console.log( { user_Id })
-        UserApiService.getUsers(user_Id)
-          .then(res => console.log("user workouts",res))
+      // componentDidMount() {
+      //   const { user_Id } = this.props.match.params;
+      //   console.log( { user_Id })
+      //   UserApiService.getUsers(user_Id)
+      //     .then(res => console.log("user workouts",res))
           
-      }
+      // }
       render() {
        
         return (
