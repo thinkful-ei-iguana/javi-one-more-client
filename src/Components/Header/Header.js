@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeartbeat } from '@fortawesome/free-solid-svg-icons'
-import LoginPage from '../LoginPage/LoginPage'
 
 import '../Header/Header.css'
 
@@ -18,7 +17,7 @@ class Header extends Component {
                 <span className="enter-app">Enter App</span>
                  </Link>
                  <div>
-                <Link to='/login'>LOGIN</Link>
+                {/* <Link to='/login'>LOGIN</Link> */}
                  </div>
             </header>
         </div>
